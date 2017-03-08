@@ -4,18 +4,23 @@
 
 ### Using default config file
 
+~~~
 docker run -v -p 9999:80 qiangjun/docker-shadowsocks
+~~
 
 Default password: hellopassword
 
 ### Using custom config file.
 
+~~~
 docker run -v config.json:/config.json -p 9999:80 qiangjun/docker-shadowsocks
+~~~
 
 ## Note
 
 Do not change the `server_port` in config.json, leave it as 80.
 
+~~~
 {
     "server":"localhost",
     "server_port":80,
@@ -26,3 +31,4 @@ Do not change the `server_port` in config.json, leave it as 80.
     "method":"aes-256-cfb",
     "fast_open": false
 }
+~~~
