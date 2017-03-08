@@ -6,7 +6,7 @@
 
 ~~~
 docker run -v -p 9999:80 qiangjun/docker-shadowsocks
-~~
+~~~
 
 Default password: hellopassword
 
