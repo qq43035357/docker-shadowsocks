@@ -13,7 +13,7 @@ Default password: hellopassword
 ### Using custom config file.
 
 ~~~
-docker run -v config.json:/config.json -p 9999:80 qiangjun/docker-shadowsocks
+docker run -v $(pwd)/config.json:/config.json -p 9999:80 qiangjun/docker-shadowsocks
 ~~~
 
 ## Note
